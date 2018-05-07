@@ -23,13 +23,14 @@
         /**
          * Sorunun cevabını bu yorumdan sonra yazınız.
          */
-           
-+            var sayi,tahmin,hak=1,i=0;;
+          
     sayi=Math.round(Math.random()*100);
-    do
+    do{
+        sayac++;
     {
-        tahmin=parseInt(prompt("Tahmini Giriniz: "));
-        if (tahmin<sayi)
+        tahmin=Number(prompt("Sayı Tahmininiz nedir?));
+        console.log(tahmin);
+        if (tahmin===0)
         {
             document.write("Daha büyük bir sayı giriniz.<br>"); 
         }
