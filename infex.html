@@ -24,28 +24,30 @@
          * Sorunun cevabını bu yorumdan sonra yazınız.
          */
           
-    sayi=Math.round(Math.random()*100);
-    do{
-        sayac++;
-    {
-        tahmin=Number(prompt("Sayı Tahmininiz nedir?));
-        console.log(tahmin);
-        if (tahmin===0)
-        {
-            document.write("Daha büyük bir sayı giriniz.<br>"); 
-        }
-        if (tahmin==sayi)
-        {
-        document.write("Tebrikler tuttuğum sayıyı 3.denemede buldun.Tuttuğum sayı: "+ sayi + "<br>");
-        document.write(hak + ". hakkınızda bildiniz."); 
-        }
-    hak++;
-    }
-    while ((tahmin!=sayi) && hak<10)
-    if (hak>10)
-    {
-        document.write("Hakkınız kalmadı. Tutulan sayı : "+ sayi + "<br>");
-    }
+             var tahmin = 0;
+             var sayac = 0;
+             sayi=Math.round(Math.random()*100);
+-                
+-            console.log(sayi);
+-            do {
++            console.log(sayi);
++            do {
+             sayac++;
+             tahmin = Number(prompt("Sayı tahmininiz nedir ? "));
+             console.log(tahmin);
+             if (tahmin === 0)
+-
++            alert("Oyundan çıktınız");
++            break;
++       if (tahmin<sayi)
++ {
++       document.write("Daha büyük bir sayı giriniz.<br>"); 
++ }
++       if (tahmin>sayi)
++ {
++       document.write("Daha küçük bir sayı giriniz.<br>"); 
++ }
++       if (tahmin==sayi)
 +            
 
         </script>
